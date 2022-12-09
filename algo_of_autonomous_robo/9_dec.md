@@ -55,3 +55,35 @@ new Q = 0 + 0.5 (0 + 0.9 x 0 - 0) = 0
 # image
 
 
+now robot is in room 4 (From 0). Now look at the reward matrix, there is one entry of 0 and other is 100. 
+
+Episode 2:  
+
+Episode 3:
+now he chose to leave the house
+
+Episode 4: 
+room 2 , 
+
+# imag3
+room 3, there is something there, but he will behave explorative (greedy) now and not chose the good action
+
+
+## Homework: code the Q(s,a) update 
+
+### Crawling Robot
+
+2 motors, 2 DOF, uses arms to move the robot, has sensors in bum
+afer moving forward, back sensor will check the distance from the wall and gets the reward by increasing the sensor value.
+
+Define 5 position for motor M1 and also for motor m2, eg (0,2) where 0 is M1 pos. and M2 pos. is 1.
+this gives total of  25 states (m,n)
+
+Actions can be M1: up, M1: down, M2: up and M2: down
+this gives 4 actions
+
+Lets encode or index all these in Q matrix
+table contains action as M1+ (up), M1- (down), M2+ (up), M2- (down)
+
+THere is no reward matrix as all of the rewards are coming from a sensor
+
