@@ -44,9 +44,14 @@ Episode 1:
 we know the update rule 
 # (add image)
 
-S(state): 0
+|S(state): 0|
 A(action): 4
 R(reward): 0
 S'(new state): 4
 
 then update Q
+new Q = 0 + 0.5 (0 + 0.9 x 0 - 0) = 0
+
+# image
+
+
